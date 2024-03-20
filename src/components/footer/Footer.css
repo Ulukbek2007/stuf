@@ -1,0 +1,22 @@
+.footer-container {
+    margin-bottom: 50px;
+    background-color: #191919;
+    padding: 0 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-img {
+    display: flex;
+    gap: 24px;
+}
+.footer-developer{
+    color: #6C3EB8;
+}
+.footer-text-dev{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

@@ -1,0 +1,174 @@
+.home-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.home-page-one {
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #191919;
+    width: 220px;
+}
+
+.home-page-two {
+    padding: 20px 20px;
+    border-radius: 6px;
+    background-color: #191919;
+    width: 73%;
+}
+.home-btn-new-year,
+.home-filter-btn,
+.home-btn-more,
+.home-btn-shop {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    background-color: #6C3EB8;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.home-btn-new-year:hover,
+.home-filter-btn:hover,
+.home-btn-more:hover,
+.home-btn-shop:hover {
+    background-color: #412078;
+}
+
+
+
+
+.home-text-btn {
+    color: #6C3EB8;
+    cursor: pointer;
+
+}
+
+.home-text-product {
+    text-align: center;
+}
+
+.home-filter,
+.home-product {
+    margin-bottom: 50px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #191919;
+
+}
+
+.home-cart {
+    width: 19%;
+    border-radius: 6px;
+    background: #212123;
+
+}
+
+.home-cart-img {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+
+}
+
+.home-big-image {
+    position: absolute;
+    padding-left: 500px;
+    padding-top: 250px;
+    padding-right: 500px;
+}
+
+.home-text-warbtn {
+    cursor: pointer;
+}
+
+.home-text-warbtn:hover {
+    color: #6C3EB8;
+
+}
+
+.home-filtered-product {
+    display: flex;
+    width: 95%;
+    overflow: auto;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.home-filter-product-all,
+.home-all-product {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.home-filter-product-small {
+    display: flex;
+    width: 95%;
+    overflow: auto;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.home-new-year-slice {
+    position: relative;
+    display: flex;
+    height: 570px;
+    width: 100%;
+    background: #191919;
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+.home-new-year-one{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    
+}
+.home-new-year-two{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+.home-text-sale-new-year{
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: black;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+
+
+
+.home-text-sale-new-year span {
+    color: #6C3EB8;
+    font-weight: 900;
+}
+.home-image-shoes{
+position: absolute;
+right: 72%;
+top: 58%;
+}
+.home-image-play{
+    position: absolute;
+    top: 78%;
+    right: 48.5%;
+}

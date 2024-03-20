@@ -1,0 +1,90 @@
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 950px;
+    border-radius: 6px;
+    height: 423px;
+    background: #191919;
+}
+
+.card-big-image {
+    width: 375px;
+    height: 375px;
+    border-radius: 8px;
+}
+
+.card-small-image {
+
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+}
+
+.card-small-images {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-cards {
+    width: 485px;
+    height: 375px;
+    gap: 20px;
+    display: flex;
+}
+
+.card-info {
+    width: 386px;
+
+    height: 375px;
+}
+
+.card-show-hidden-btn {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-stretch: inherit;
+    background: transparent;
+    color: rgb(173, 173, 173);
+    border: none;
+}
+
+.card-btn-add {
+    width: 133px;
+    cursor: pointer;
+    background: #6C3EB8;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: all .2s ease-in-out;
+}
+
+.card-btn-add:hover {
+    background-color: #441c85;
+}
+
+.card-btn-favorites {
+    cursor: pointer;
+    width: 171px;
+    padding: 10px 20px;
+    background: #576067;
+    color: #B8B8B8;
+    border: none;
+    border-radius: 6px;
+    transition: all .8s ease;
+}
+
+.card-btn-favorites:hover {
+    color: #ffffff;
+    background: #3e3e3e;
+}
+
+.card-all-btn {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
