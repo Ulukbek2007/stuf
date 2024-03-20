@@ -1,8 +1,8 @@
 import axios from 'axios'
-import React, { useEffect, useState ,addToCart} from 'react'
+import React, { useEffect, useState } from 'react'
 import './Cardcomponent.css'
-import { ToastContainer, toast } from 'react-toastify'
-const Cardscomponent = ({setLengthCart,setCartId,ideas,click}) => {
+import { toast } from 'react-toastify'
+const Cardscomponent = ({setCartId,ideas,click}) => {
     const [data,setData]=useState(null)
    
     const [showdescription, setShowDescription] = useState(false);
@@ -59,7 +59,6 @@ const dataproduct={
        </div>
        <button className='card-btn-add' onClick={click}>Back</button>
         </div> 
-        <ToastContainer/>
     </div>
   )
 }

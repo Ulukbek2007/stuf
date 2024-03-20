@@ -5,15 +5,13 @@ import { getProduct } from '../../store/slices/dataSlice'
 import image from '../../img/image.svg'
 import { uniqBy } from 'lodash'
 import { Link } from 'react-router-dom'
-import { ToastContainer, toast } from 'react-toastify'
 import imageNewYear from '../../img/mageNewYear.svg'
 import shoes from '../../img/shoemen.svg'
 import playstation from '../../img/playstation.svg'
-import 'react-toastify/dist/ReactToastify.css';
 import Cardscomponent from './card/Cardscomponent'
 import SimilarProducts from './similarProducts/SimilarProducts'
-import Cart from '../about/Cart'
 import AuthUser from '../authuser/AuthUser'
+import { toast } from 'react-toastify'
 const Home = ({setConfirmPassword,setPassword,lastName,setLastName,setEmail,confirmpassword,setName,email,password,nameuser,changeSubmit,onclickOnchange,onclickFalse,setLengthCart,setCartId,view,activeForm}) => {
   const [componentView, setComponentView] = useState(true)
   const [getId, setGetId] = useState(null);
@@ -132,7 +130,6 @@ const Home = ({setConfirmPassword,setPassword,lastName,setLastName,setEmail,conf
 
         <button onClick={seeMoreBtnFilter} className='home-filter-btn'>{!seeMore ? 'See more' : 'Close'}</button>
       </div>:null}
-      <ToastContainer />
     </div>
   )
 }

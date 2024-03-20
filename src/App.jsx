@@ -3,10 +3,12 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
+import 'react-toastify/dist/ReactToastify.css';
+
 import Home from './pages/home/Home'
 import Cart from './pages/about/Cart'
-import AuthUser from './pages/authuser/AuthUser'
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify'
 const App = () => {
   const [componentView, setComponentView] = useState(true)
   const [view, setView] = useState(true)
@@ -23,7 +25,7 @@ const App = () => {
   const changeSubmit = async (e) => {
     e.preventDefault();
     try {
-      if(email.trim()&&password.trim()&&nameuser.trim()&&lastName.trim()&&confirmpassword.trim()!==''&&password===confirmpassword&&password.length>6&&confirmpassword.length>6){
+      if(email.trim()&&password.trim()&&nameuser.trim()&&lastName.trim()&&confirmpassword.trim()!==''&&password===confirmpassword&&password.length>=6&&confirmpassword.length>=6){
         const response = await axios.post(
         'https://659d6043633f9aee79094a3d.mockapi.io/short/categories',
         {
@@ -35,12 +37,12 @@ const App = () => {
         }
       );
       
-      alert('Данные успешно отправлены:')
       console.log(response.data);
       setSaveUser(nameuser)
-  setTimeout(() => {
-    setActiveForm(false)
-  }, 1000);
+  
+  toast.success('Данные успешно отправлены на сервер')
+    onclickFalse()
+  
       }
       else{
         setEmail('')
@@ -48,7 +50,9 @@ const App = () => {
         setConfirmPassword('')
         setPassword('')
         setNameUser('')
+        toast.error('Заполните все поля и пароли должен совпадать друг к другу длина пароля должен равен 6 или больше')
         console.log('Ошибка');
+
       }
     } catch (error) {
       alert('Произошла ошибка:', error);
@@ -108,6 +112,7 @@ const onclickFalse=()=>{
         cartid={cartid} />} />
       </Routes>
       {componentView ? <Footer /> : null}
+      <ToastContainer/>
     </div>
   )
 }
